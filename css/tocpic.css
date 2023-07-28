@@ -1,0 +1,93 @@
+.container {
+    margin-top: 9%;
+}
+
+.info-main {
+    margin-top: 5%;
+}
+
+.title-main {
+    margin-bottom: 0px;
+    margin-left: 4%;
+    background-color: #6c7ee1;
+    color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 30%;
+    /* text-shadow: 2px 2px 2px #c688eb; */
+}
+
+.title-main>span {
+    padding: 6%;
+}
+
+.lecturers {
+    margin: 3%;
+    margin-top: 0px;
+    border-top: 2px solid #6c7ee1;
+}
+
+.lecturer {
+    margin-top: 2%;
+    margin-left: 4%;
+    width: 30%;
+    border: 1px solid #c688eb;
+    border-radius: 10px;
+}
+
+.image-lecturer img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.info-lecturer {
+    margin-left: 3%;
+}
+
+.info-lecturer h1 {
+    font-size: 20px !important;
+    margin: 0px !important;
+    text-align: center;
+}
+
+.info-lecturer p {
+    margin: 2%;
+    margin-left: 5%;
+}
+
+.info-lecturer p:nth-last-child(1),
+.info-lecturer p:nth-last-child(2){
+padding-left: 5%;
+}
+
+  /* reponsive */
+
+/* -------điện thoại di động ở chế độ dọc----- */
+@media (max-width: 575px) {
+
+ 
+}
+
+/* ------------điện thoại di động ở chế độ ngang-------- */
+@media (min-width: 576px) and (max-width: 767px) {
+
+  
+}
+
+/* ------------máy tính bảng----------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* -----------máy tính để bàn------------- */
+@media (min-width: 992px) and (max-width: 1150px) {
+    .image-lecturer img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .info-lecturer h1 {
+        font-size: 20px !important;
+    }
+}
