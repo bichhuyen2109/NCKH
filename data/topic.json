@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Hệ Thống Tư Vấn Chi Tiêu Hợp Lý Và Tiết Kiệm",
+        "lecturer": "Dương Hữu Thành",
+        "majors": "Công Nghệ Thông Tin",
+        "img": "/image/ten.jpg",
+        "leader": "Nguyễn Hoài Thu - 2251050014",
+        "member": "Nguyễn Ngọc Anh - 2254789743"
+    },
+    {
+        "id": 2,
+        "name": "Bài Toán Trả Lời Tự Động bài Thi Đọc Hiểu Tiếng Anh",
+        "lecturer": "Dương Hữu Thành",
+        "majors": "Công Nghệ Thông Tin",
+        "img": "/image/ten.jpg",
+        "leader": "Nguyễn Anh Tuấn - 1951050478",
+        "member": "Trần Hoài Ngọc - 1951050189"
+    },
+    {
+        "id": 3,
+        "name": "Khảo Sát Quá Trình Trích Ly Cao Lá Ổi Bằng Vi Sóng",
+        "lecturer": "Lý Thị Minh Hiền",
+        "majors": "Công Nghệ Sinh Học",
+        "img": "/image/detaiCNSH.jpg",
+        "leader": "Nguyễn Văn An - 2051050111",
+        "member": "Phạm Anh Hoàng - 2051050289"
+    },
+    {
+        "id": 4,
+        "name": "Dự Đoán Thành Tích Học Của Sinh Viên Sử Dụng RANDOM FOREST",
+        "lecturer": "Nguyễn Thị Phương Trang",
+        "majors": "Công Nghệ Thông Tin",
+        "img": "/image/ten.jpg",
+        "leader": "Trần Yến Vũ - 2151050789",
+        "member": "Lý Thế Anh - 2150468967"
+    },
+    {
+        "id": 5,
+        "name": "Trải Nghiệm Khách Hàng Qua Ứng Dụng Thự Tế Tăng Cường Trong Bán Lẻ",
+        "lecturer": "Lê Thị Huệ Linh",
+        "majors": "Quản Trị Kinh Doanh",
+        "img": "/image/DetaiQTKD.jpg",
+        "leader": "Trần Quang Vũ - 2051050741",
+        "member": "Nguyễn Văn Từ - 2054786953"
+    },
+    {
+        "id": 6,
+        "name": "Áp Lực Xã Hội Sau Ly Hôn Của Người Trẻ Từ 18-35 Tuổi",
+        "lecturer": "Đỗ Hồng Quân",
+        "majors": "XHH-CTXH-ĐNA",
+        "img": "/image/ctxh.jpg",
+        "leader": "Trần Tuấn Đạt - 2151050235",
+        "member": "Hoàng Đức Minh - 2151050247"
+    }
+   
+]

@@ -1,60 +1,90 @@
-body{
-    background: rgb(201, 248, 212);
-    background-size: cover;
-    font-size: 16px;
-}
- #login{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-} 
-#form-login{
-    padding: 5px 200px 45px 200px;
-    
-}
-.form-heading{
-    font-size: 25px;
-    color: #000000;
+.login{
+    background: linear-gradient(#c688eb,#6c7de1);
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
     text-align: center;
-    margin-bottom: 2px;
-}
-.form-group{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    padding: 0px 20px
-}
-.form-submit{
-    background: rgb(0, 0, 0);
-    color: #ffffff;
-    width: 100%;
-    padding: 5px 0px;
-    transition: 0.25s ease-in-out;
-    margin-top: 15px;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #593e67;
 }
 
-  /* reponsive */
+.login h1{
+    color: aliceblue;
+    text-shadow: 4px 3px 2px #fba2d0;
+}
+
+.sect select{
+    font-size: 17px;
+    min-width: 100px;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.user input,
+.pass input{
+    font-size: 17px;
+    width: 35%;
+    border-radius: 10px;
+}
+
+.btn{
+    margin: 3%;
+}
+
+.btn input{
+    font-size: 20px;
+    background-color: #ffc4a4;
+    border-radius: 10px;
+}
+
+/* reponsive */
 
 /* -------điện thoại di động ở chế độ dọc----- */
 @media (max-width: 575px) {
 
- 
+    .login{ 
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .sect select{
+        font-size: 13px;
+    }
+    
+    .user input,
+    .pass input{
+        font-size: 13px;
+        width: 50%;
+    }
+    
+    .btn input{
+        font-size: 13px;
+    }
 }
 
 /* ------------điện thoại di động ở chế độ ngang-------- */
 @media (min-width: 576px) and (max-width: 767px) {
 
-  
-}
-
-/* ------------máy tính bảng----------- */
-@media (min-width: 768px) and (max-width: 991px) {
-  
-}
-
-/* -----------máy tính để bàn------------- */
-@media (min-width: 992px) and (max-width: 1150px) {
-  
+    .login{ 
+        width: 70%;
+        font-size: 20px;
+    }
+    
+    .sect select{
+        font-size: 13px;
+    }
+    
+    .user input,
+    .pass input{
+        font-size: 13px;
+        width: 50%;
+    }
+    
+    .btn input{
+        font-size: 13px;
+    }
 }

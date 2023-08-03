@@ -13,13 +13,18 @@
 }
 
 .topics {
-    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .topic {
-    box-shadow: 10px 10px 10px #aaaa;
-    margin: 6%;
-    margin-top: 3%;
+    height: 100%;
+    box-shadow: 10px 5px 10px #454545;
+    width: 47%;
+    margin-bottom: 1%;
+    border-radius: 15px;
 }
 
 /* .topic:hover {
@@ -115,35 +120,30 @@
 h1.text-info {
     text-shadow: 2px 2px 5px blue;
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
-    margin-top: 14%;
-    margin-bottom: 14%;
 }
 
 h3.text-info {
     color: whitesmoke;
     text-shadow: 2px 2px 5px rgb(93, 0, 255);
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
+
 .lecturers {
-    margin: 5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .lecturer {
     position: relative;
     overflow: hidden;
-    width: 25%;
-}
-
-.lecturer img {
-    width: 100%;
-    height: 100%;
+    width: 20%;
+    margin-left: 4%;
 }
 
 .lecturer:hover .info-lecturer {
@@ -154,7 +154,7 @@ h3.text-info {
 .image-lecturer img {
     width: 100%;
     border-radius: 20px;
-    height: 100%;
+    height: 300px;
 }
 
 .info-lecturer {
@@ -166,14 +166,14 @@ h3.text-info {
     transition: all .7s;
     background-color: #6c7de17a;
     width: 100%;
-    height: 100%;
+    height: 99%;
     border-radius: 20px;
 }
 
 .info-lecturer input {
     background-color: #c688eb;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     padding: 8px 15px;
     border: none;
     border-radius: 20px;
@@ -239,28 +239,39 @@ h3.text-info {
 @media (max-width: 575px) {
 
     /* đề tài nổi bật */
+    .topics {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .topic {
+        margin: 2%;
+        width: 100%;
+    }
+
     .image-topic img {
         border-radius: 4px;
     }
 
     .info-topic h1 {
-        font-size: 4px;
+        font-size: 6px;
     }
 
     .name-topic h1 {
-        font-size: 4px !important;
+        font-size: 7px !important;
     }
 
     .info-topic p {
-        font-size: 3px;
-    }
-
-    .info-topic h5 {
         font-size: 4px;
     }
 
-    .rating_5 {
+    .info-topic h5 {
         font-size: 5px;
+    }
+
+    .rating_5 {
+        font-size: 9px;
     }
 
     .rating_5 i {
@@ -268,12 +279,25 @@ h3.text-info {
     }
 
     /* Giảng viên yêu thích */
+.lecturers{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.lecturer{
+    width: 40%;
+}
+
+.image-lecturer img{
+    height: 150px;
+}
+
     h1.text-info {
-        font-size: 9px;
+        font-size: 15px;
     }
 
     h3.text-info {
-        font-size: 7px;
+        font-size: 10px;
     }
 
     .image-lecturer img {
@@ -285,7 +309,7 @@ h3.text-info {
     }
 
     .info-lecturer input {
-        font-size: 6px;
+        font-size: 8px;
     }
 
     /* prize */
@@ -336,12 +360,25 @@ h3.text-info {
     }
 
     /* Giảng viên yêu thích */
+    .lecturers{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .lecturer{
+        width: 45%;
+    }
+    
+    .image-lecturer img{
+        height: 200px;
+    }
+
     h1.text-info {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     h3.text-info {
-        font-size: 12px;
+        font-size: 19px;
     }
 
     .image-lecturer img {
@@ -353,7 +390,7 @@ h3.text-info {
     }
 
     .info-lecturer input {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     /* prize */
@@ -403,6 +440,10 @@ h3.text-info {
     }
 
     /* Giảng viên yêu thích */
+.image-lecturer img{
+    height: 200px;
+}
+
     h1.text-info {
         font-size: 24px;
     }
@@ -435,8 +476,12 @@ h3.text-info {
 
 /* -----------máy tính để bàn------------- */
 @media (min-width: 992px) and (max-width: 1150px) {
-   
+
     /* đề tài nổi bật */
+.image-lecturer img{
+    height: 250px;
+}
+
     .image-topic img {
         border-radius: 10px;
     }
@@ -494,4 +539,4 @@ h3.text-info {
     .content {
         font-size: 20px;
     }
-  }
+}

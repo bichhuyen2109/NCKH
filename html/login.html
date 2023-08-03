@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OU</title>
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="shortcut icon" href="/image/ou.png">
-        <link rel="stylesheet" href="/css/login.css">
 
-    
-        <script src="/js/code.jquery.com_jquery-3.7.0.min.js">
-            wow = new WOW(
-                {
-                    boxClass: 'wow',      // default
-                    animateClass: 'animated', // default
-                    offset: 0,          // default
-                    mobile: true,       // default
-                    live: true        // default
-                }
-            )
-            wow.init();
-        </script>
-        <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
-        <script src="/js/gototop.js"></script>
-        <script src="/js/contact.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OU</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="/image/ou.png">
+    <link rel="stylesheet" href="/css/login.css">
+
+
+    <script src="/js/code.jquery.com_jquery-3.7.0.min.js">
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+        )
+        wow.init();
+    </script>
+    <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="/js/gototop.js"></script>
+    <script src="/js/contact.js"></script>
+</head>
+
 <body>
-    <div id="login">
-        <form action="" id="form-login">
-            <h1 class="form-heading">Đăng nhập</h1>
-            <div class="form-group">
-                <input type="text" class="form-input" placeholder="Tên đăng nhập">
+    <div class="login">
+        <form class="form-login">
+            <h1>Đăng nhập</h1>
+            <div class="sect">
+                <select name="" id="">
+                    <option>Hệ chính quy</option>
+                    <option>Hệ đào tạo từ xa</option>
+                </select>
             </div>
-            <div class="form-group"> 
+            <div class="user">
+                <input type="text" class="form-input" placeholder="MSSV">
+            </div>
+            <div class="pass">
                 <input type="password" class="form-input" placeholder="Mật khẩu">
             </div>
-            <input type="submit" value="Đăng nhập" class="form-submit">
-            <input type="submit" value="Đăng kí" class="form-submit">
-        </form>
+            <div class="btn">
+                <input type="submit" value="Đăng nhập" class="btn_login">
+                <input type="submit" value="Hủy" class="btn_cancel">
+            </div>
         </form>
     </div>
 </body>
+
 </html>

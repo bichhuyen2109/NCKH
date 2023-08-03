@@ -34,26 +34,3 @@
     color: white;
   }
 
-  /* reponsive */
-
-/* -------điện thoại di động ở chế độ dọc----- */
-@media (max-width: 575px) {
-
- 
-}
-
-/* ------------điện thoại di động ở chế độ ngang-------- */
-@media (min-width: 576px) and (max-width: 767px) {
-
-  
-}
-
-/* ------------máy tính bảng----------- */
-@media (min-width: 768px) and (max-width: 991px) {
-  
-}
-
-/* -----------máy tính để bàn------------- */
-@media (min-width: 992px) and (max-width: 1150px) {
-  
-}

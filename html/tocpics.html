@@ -29,6 +29,7 @@
     <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="/js/gototop.js"></script>
     <script src="/js/contact.js"></script>
+    <script src="/js/topic.js"></script>
 </head>
 
 <body>
@@ -91,163 +92,102 @@
     <section class="titles">
         <div class="title">
             <h1>Danh sách Đề Tài</h1>
-            <!-- <div class="line yellow">
-                <span>&#8213;</span>
-                <span>&#8213;</span>
-                <span>&#8213;</span>
-                <span>&#8213;</span>
-                <span>&#8213;</span>
-                <i class="fa-solid fa-star"></i>
-                <span>&#8213;</span>
-                <span>&#8213;</span>
-                <span>&#8213;</span>
-                <span>&#8213;</span>
-                <span>&#8213;</span>
-            </div> -->
         </div>
     </section>
 
     <main class="info-main">
-        <!-- CNTT -->
-        <div class="container">
-            <h1 class="title-main"> <span>Công Nghệ Thông Tin</span></h1>
-            <div class="lecturers flex">
-                <div class="lecturer">
-                    <div>
-                        <div class="image-lecturer">
-                            <img src="/image/ten.jpg" alt="D.H>Thành">
-                        </div>
-                        <div class="info-lecturer">
-                            <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
-                            <p>Giảng viên hướng dẫn: Dương Hữu Thành</p>
-                            <p>SV thực hiện: </p>
-                            <p>Nguyễn Hoài Thu - 2251050014</p>
-                            <p>Nguyễn Ngọc Anh - 2254789743</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- CNSH -->
-        <div class="container">
-            <h1 class="title-main"> <span>Công Nghệ Sinh Học</span></h1>
-            <div class="lecturers flex">
-                <div class="lecturer">
-                    <div>
-                        <div class="image-lecturer">
-                            <img src="/image/DHThanh.png" alt="D.H>Thành">
-                        </div>
-                        <div class="info-lecturer">
-                            <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
-                            <p>Giảng viên hướng dẫn: Dương Hữu Thành</p>
-                            <p>SV thực hiện: </p>
-                            <p>Nguyễn Hoài Thu - 2251050014</p>
-                            <p>Nguyễn Ngọc Anh - 2254789743</p>
+            <!-- CNTT -->
+            <div class="container">
+                <h1 class="title-main"> <span id="title-cntt">Công Nghệ Thông Tin</span></h1>
+                <div class="topics flex" id="cntt">
+                    <div class="topic">
+                        <div>
+                            <div class="image-topic">
+                                <img src="/image/ten.jpg" alt="D.H>Thành">
+                            </div>
+                            <div class="info-topic">
+                                <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
+                                <hr>
+                                <p>Giảng viên hướng dẫn:</p>
+                                <h4>Dương Hữu Thành</h4>
+                                <hr>
+                                <p>SV thực hiện: </p>
+                                <h4>Nguyễn Hoài Thu - 2251050014</h4>
+                                <h4>Nguyễn Ngọc Anh - 2254789743</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- QTKD -->
-        <div class="container">
-            <h1 class="title-main"> <span>Quản Trị Kinh Doanh</span></h1>
-            <div class="lecturers flex">
-                <div class="lecturer">
-                    <div>
-                        <div class="image-lecturer">
-                            <img src="/image/DHThanh.png" alt="D.H>Thành">
-                        </div>
-                        <div class="info-lecturer">
-                            <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
-                            <p>Giảng viên hướng dẫn: Dương Hữu Thành</p>
-                            <p>SV thực hiện: </p>
-                            <p>Nguyễn Hoài Thu - 2251050014</p>
-                            <p>Nguyễn Ngọc Anh - 2254789743</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- TCNH -->
-        <div class="container">
-            <h1 class="title-main"> <span>Tài Chính Ngân Hàng</span></h1>
-            <div class="lecturers flex">
-                <div class="lecturer">
-                    <div>
-                        <div class="image-lecturer">
-                            <img src="/image/DHThanh.png" alt="D.H>Thành">
-                        </div>
-                        <div class="info-lecturer">
-                            <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
-                            <p>Giảng viên hướng dẫn: Dương Hữu Thành</p>
-                            <p>SV thực hiện: </p>
-                            <p>Nguyễn Hoài Thu - 2251050014</p>
-                            <p>Nguyễn Ngọc Anh - 2254789743</p>
+            <!-- CNSH -->
+            <div class="container">
+                <h1 class="title-main"> <span id="title-cnsh">Công Nghệ Sinh Học</span></h1>
+                <div class="topics flex" id="cnsh">
+                    <div class="topic">
+                        <div>
+                            <div class="image-topic">
+                                <img src="/image/ten.jpg" alt="D.H>Thành">
+                            </div>
+                            <div class="info-topic">
+                                <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
+                                <hr>
+                                <p>Giảng viên hướng dẫn:</p>
+                                <h4>Dương Hữu Thành</h4>
+                                <hr>
+                                <p>SV thực hiện: </p>
+                                <h4>Nguyễn Hoài Thu - 2251050014</h4>
+                                <h4>Nguyễn Ngọc Anh - 2254789743</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- luat -->
-        <div class="container">
-            <h1 class="title-main"> <span>Luật</span></h1>
-            <div class="lecturers flex">
-                <div class="lecturer">
-                    <div>
-                        <div class="image-lecturer">
-                            <img src="/image/DHThanh.png" alt="D.H>Thành">
-                        </div>
-                        <div class="info-lecturer">
-                            <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
-                            <p>Giảng viên hướng dẫn: Dương Hữu Thành</p>
-                            <p>SV thực hiện: </p>
-                            <p>Nguyễn Hoài Thu - 2251050014</p>
-                            <p>Nguyễn Ngọc Anh - 2254789743</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- NN -->
-        <div class="container">
-            <h1 class="title-main"> <span>Ngoại Ngữ</span></h1>
-            <div class="lecturers flex">
-                <div class="lecturer">
-                    <div>
-                        <div class="image-lecturer">
-                            <img src="/image/DHThanh.png" alt="D.H>Thành">
-                        </div>
-                        <div class="info-lecturer">
-                            <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
-                            <p>Giảng viên hướng dẫn: Dương Hữu Thành</p>
-                            <p>SV thực hiện: </p>
-                            <p>Nguyễn Hoài Thu - 2251050014</p>
-                            <p>Nguyễn Ngọc Anh - 2254789743</p>
+            <!-- QTKD -->
+            <div class="container">
+                <h1 class="title-main"> <span id="title-qtkd">Quản Trị Kinh Doanh</span></h1>
+                <div class="topics flex" id="qtkd">
+                    <div class="topic">
+                        <div>
+                            <div class="image-topic">
+                                <img src="/image/ten.jpg" alt="D.H>Thành">
+                            </div>
+                            <div class="info-topic">
+                                <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
+                                <hr>
+                                <p>Giảng viên hướng dẫn:</p>
+                                <h4>Dương Hữu Thành</h4>
+                                <hr>
+                                <p>SV thực hiện: </p>
+                                <h4>Nguyễn Hoài Thu - 2251050014</h4>
+                                <h4>Nguyễn Ngọc Anh - 2254789743</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- XHH-CTXH-ĐNA -->
-        <div class="container">
-            <h1 class="title-main"> <span>XHH-CTXH-ĐNA</span></h1>
-            <div class="lecturers flex">
-                <div class="lecturer">
-                    <div>
-                        <div class="image-lecturer">
-                            <img src="/image/DHThanh.png" alt="D.H>Thành">
-                        </div>
-                        <div class="info-lecturer">
-                            <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
-                            <p>Giảng viên hướng dẫn: Dương Hữu Thành</p>
-                            <p>SV thực hiện: </p>
-                            <p>Nguyễn Hoài Thu - 2251050014</p>
-                            <p>Nguyễn Ngọc Anh - 2254789743</p>
+            <!-- XHH-CTXH-ĐNA -->
+            <div class="container">
+                <h1 class="title-main"> <span id="title-xhh">XHH-CTXH-ĐNA</span></h1>
+                <div class="topics flex" id="xhh">
+                    <div class="topic">
+                        <div>
+                            <div class="image-topic">
+                                <img src="/image/ten.jpg" alt="D.H>Thành">
+                            </div>
+                            <div class="info-topic">
+                                <h1>Hệ Thống Tư Vấn Chi Tiêu</h1>
+                                <hr>
+                                <p>Giảng viên hướng dẫn:</p>
+                                <h4>Dương Hữu Thành</h4>
+                                <hr>
+                                <p>SV thực hiện: </p>
+                                <h4>Nguyễn Hoài Thu - 2251050014</h4>
+                                <h4>Nguyễn Ngọc Anh - 2254789743</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer class="footer">
