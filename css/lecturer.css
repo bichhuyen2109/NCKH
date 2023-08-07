@@ -18,6 +18,7 @@
 }
 
 .lecturers {
+    flex-wrap: wrap;
     margin: 3%;
     margin-top: 0px;
     border-top: 2px solid #6c7ee1;

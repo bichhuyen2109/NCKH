@@ -10,18 +10,19 @@
     <title>OU</title>
 
     <link rel="shortcut icon" href="/image/ou.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <link rel="stylesheet" href="/css/footer.css"/>
     <link rel="stylesheet" href="/css/news.css"/>
     <link rel="stylesheet" href="/css/header.css"/>
     <link rel="stylesheet" href="/css/gototop.css"/>
 
-    <script src="/js/code.jquery.com_jquery-3.7.0.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
         wow = new WOW(
             {
                 boxClass: 'wow',      // default
-                animateClass: 'animated', // default
+                animateClass: 'animate__animated', // default
                 offset: 0,          // default
                 mobile: true,       // default
                 live: true        // default
@@ -38,8 +39,8 @@
 <body>
     <nav>
         <div class=" menu flex header">
-            <div class="image-header"> <img src="/image/logo.png" alt="OU"></div>
-            <div class="menu-items">
+            <div class="image-header wow animate__slideInLeft animate__slow"> <img src="/image/logo.png" alt="OU"></div>
+            <div class="menu-items wow animate__slideInRight animate__slow">
                 <ul class="menu-item flex text-decoration">
                     <li>
                         <a href="/html/home.html">Trang chủ</a>
@@ -56,29 +57,20 @@
                     <li class="contact">
                         <a href="#">Liên hệ</a>
                     </li>
+                    <li class="user" > 
+                        <a href="/html/login.html"><i class="fa-solid fa-user"></a></i>
+                    </li>
                 </ul>
-            </div>
-            <div class="user"><a href="#"><i class="fa-solid fa-user"></a></i>
-                <!-- <div class="flex menu-user">
-                    <div class="flex">
-                        <a href="#">Đăng ký</a>
-                    </div>
-                    <div>
-                        <span>/</span>
-                    </div>
-                    <div class="flex">
-                        <a href="#">Đăng nhập</a>
-                    </div></div> -->
             </div>
         </div>
     </nav>
 
     <header class="image">
         <div class="flex img">
-            <div class="text-image">
-                <h1>Khoa học nào cũng đặt trên nền tảng hệ thống nguyên lý cố định và bất biến như những nguyên
+            <div class="text-image wow animate__lightSpeedInLeft animate__slow">
+                <h1>" Khoa học nào cũng đặt trên nền tảng hệ thống nguyên lý cố định và bất biến như những nguyên
                     lý chi phối và điều hòa vạn vật. Con người không thể đặt ra nguyên lý, con người chỉ có thể phát
-                    hiện ra chúng.</h1>
+                    hiện ra chúng. " </h1>
                 <p>Trích danh ngôn của Thomas Paine</p>
             </div>
             <div class="image-item">
@@ -94,24 +86,30 @@
         </a>
     </div>
 
+    <section class="titles">
+        <div class="title wow animate__backInDown animate__slow">
+            <h1>Nội Dung Tin Tức</h1>
+        </div>
+    </section>
+
     <main class="flex">
         <div class="notifi text-decoration">
-            <div class="notifi-item">
-                <a href="#">
+            <div class="notifi-item wow animate__zoomInLeft animate__slow">
+                <a href="/html/login.html">
                     <h1>Thông Báo</h1>
                 </a>
                 <div class="info-notifi">
-                    <a href="#">
+                    <a href="/html/login.html">
                         <p><i class="fa-solid fa-check"></i> Bạn đã đăng kí đề tài nghiên cứu khoa học cho năm 2023
                             chưa?</p>
                     </a>
-                    <a href="#">
+                    <a href="/html/login.html">
                         <p><i class="fa-solid fa-check"></i> Bạn đã kiểm tra trạng thái đề tài bạn đã đăng kí chưa?</p>
                     </a>
-                    <a href="#">
+                    <a href="/html/login.html">
                         <p><i class="fa-solid fa-check"></i> Bạn đã Xem thành tích đề tài bạn đã hoàn thành chưa?</p>
                     </a>
-                    <a href="#">
+                    <a href="/html/login.html">
                         <p><i class="fa-solid fa-check"></i> Bạn đã kiểm tra đề tài bạn đã đăng kí thành hay công chưa?
                         </p>
                     </a>
@@ -121,7 +119,7 @@
 
         <div class="news" id="container">
             <!-- Kết quả -->
-            <div class="news-item">
+            <div class="news-item wow animate__zoomInRight animate__slow">
                 <div class="header-new text-decoration">
                     <a href="javascript:void(0)"><h1><span>Kết quả cuộc thi NCKH Năm 2023-2024</span></h1></a>
                 </div>
@@ -145,7 +143,7 @@
             </div>
 
             <!-- Gia Hạn -->
-            <div class="news-item">
+            <div class="news-item wow animate__zoomInRight animate__slow">
                 <div class="header-new text-decoration">
                     <a href="javascript:void(0)"><h1><span>Gia hạn đăng kí NCKH Năm 2023-2024</span></h1></a>
                 </div>
@@ -162,7 +160,7 @@
             </div>
 
             <!-- Đăng kí -->
-            <div class="news-item">
+            <div class="news-item wow animate__zoomInRight animate__slow">
                 <div class="header-new text-decoration">
                     <a href="javascript:void(0)"><h1><span>Đăng kí cuộc thi NCKH Năm 2023-2024</span></h1></a>
                 </div>
@@ -192,7 +190,7 @@
             </div>
 
             <!-- Tập Huấn -->
-            <div class="news-item">
+            <div class="news-item wow animate__zoomInRight animate__slow">
                 <div class="header-new text-decoration">
                     <a href="javascript:void(0)"><h1><span>Tập huấn NCKH Năm 2023-2024</span></h1></a>
                 </div>
@@ -218,6 +216,7 @@
             </div>
         </div>
     </main>
+
     <footer class="footer">
         <div class="flex space-between">
             <!-- phai -->
@@ -283,6 +282,7 @@
             <p>Website Quản Lý Đề Tài Nghiên Cứu Khoa Học &copy;2023</p>
         </div>
     </footer>
+
 </body>
 
 </html>

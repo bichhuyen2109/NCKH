@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OU</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="/image/ou.png">
     <link rel="stylesheet" href="/css/footer.css">
@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/gototop.css">
 
-    <script src="/js/code.jquery.com_jquery-3.7.0.min.js">
+    <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
         wow = new WOW(
             {
                 boxClass: 'wow',      // default
-                animateClass: 'animated', // default
+                animateClass: 'animate__animated', // default
                 offset: 0,          // default
                 mobile: true,       // default
                 live: true        // default
@@ -26,7 +28,6 @@
         )
         wow.init();
     </script>
-    <script src="/js/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script src="/js/gototop.js"></script>
     <script src="/js/contact.js"></script>
     <script src="/js/home.js"></script>
@@ -35,11 +36,11 @@
 <body>
     <nav>
         <div class=" menu flex header">
-            <div class="image-header"> <img src="/image/logo.png" alt="OU"></div>
-            <div class="menu-items">
+            <div class="image-header wow animate__slideInLeft animate__slow"> <img src="/image/logo.png" alt="OU"></div>
+            <div class="menu-items wow animate__slideInRight animate__slow">
                 <ul class="menu-item flex text-decoration">
                     <li>
-                        <a href="#">Trang chủ</a>
+                        <a href="#" >Trang chủ</a>
                     </li>
                     <li>
                         <a href="/html/tocpics.html">Đề tài</a>
@@ -50,9 +51,6 @@
                     <li>
                         <a href="/html/news.html">Tin Tức</a>
                     </li>
-                    <!-- <li>
-                        <a href="/html/notifi.html">Thông báo</a>
-                    </li> -->
                     <li class="contact">
                         <a href="#">Liên hệ</a>
                     </li>
@@ -66,9 +64,9 @@
 
     <header class="image">
         <div class="flex img">
-            <div class="text-image">
-                <h1> Trong tất cả các môn khoa học, sai lầm đi trước sự thật, và tốt nhất nó nên đi đầu
-                    tiên hơn là đi cuối cùng.</h1>
+            <div class="text-image wow animate__lightSpeedInLeft animate__slow">
+                <h1> " Trong tất cả các môn khoa học, sai lầm đi trước sự thật, và tốt nhất nó nên đi đầu
+                    tiên hơn là đi cuối cùng. "</h1>
                 <p>Trích danh ngôn của Horace Walpole</p>
             </div>
             <div class="image-item">
@@ -85,7 +83,7 @@
     </div>
 
     <section class="tocpic-outstanding">
-        <div class="title">
+        <div class="title wow animate__backInDown animate__slow">
             <h1>Bài nghiên cứu khoa học nổi bật</h1>
             <div class="line yellow">
                 <span>&#8213;</span>
@@ -102,8 +100,8 @@
             </div>
         </div>
         <div class="flex topics" id="tocpics">
-            <div class="flex topic">
-                <div class="flex">
+            <div class="flex topic animate__animated animate__fadeInRight animate__slow">
+                <div class="flex ">
                     <div class="image-topic"> <img src="/image/ten.jpg" alt=""></div>
                     <div class="info-topic">
                         <div class="name-topic">
@@ -133,7 +131,7 @@
     </section>
 
     <section class="lecturer-favorite">
-        <div class="title">
+        <div class="title wow animate__backInDown animate__slow">
             <h1>Giảng viên được yêu thích nhất</h1>
             <div class="line red">
                 <span>&#8213;</span>
@@ -151,7 +149,7 @@
         </div>
 
         <div class="lecturers flex" id="lecturers">
-            <div class="lecturer">
+            <div class="lecturer animate__animated animate__fadeInRight animate__slow">
                <div>
                     <div class="image-lecturer">
                         <img src="/image/DHThanh.png" alt="Dương Hữu Thành">
@@ -160,7 +158,7 @@
                         <h1 class="text-info">ThS.Dương Hữu Thành</h1>
                         <h3 class="text-info">Thạc Sĩ</h3>
                         <h3 class="text-info">Khoa công nghệ thông tin</h3>
-                        <input type="button" value="Chi tiết">
+                        <a href="/html/lecturers.html">Chi tiết</a>
                     </div>
                </div>
             </div>
@@ -168,7 +166,7 @@
     </section>
 
     <section class="prizes">
-        <div class="title">
+        <div class="title wow animate__backInDown animate__slow">
             <h1>Giải thưởng</h1>
             <div class="line red">
                 <span>&#8213;</span>
@@ -180,7 +178,7 @@
                 <span>&#8213;</span>
             </div>
         </div>
-        <div class="prize flex">
+        <div class="prize flex wow animate__fadeInRight animate__slow">
             <div class="image-prize">
                 <img src="/image/sup.jpg" alt="Hỗ trợ">
             </div>
@@ -194,7 +192,7 @@
                 </div>
             </div>
         </div>
-        <div class="prize flex">
+        <div class="prize flex wow animate__fadeInRight animate__slow">
             <div class="image-prize">
                 <img src="/image/hocBong.jpg" alt="Hỗ trợ">
             </div>
@@ -208,7 +206,7 @@
                 </div>
             </div>
         </div>
-        <div class="prize flex">
+        <div class="prize flex wow animate__fadeInRight animate__slow">
             <div class="image-prize">
                 <img src="/image/giaithuong.jpg" alt="Hỗ trợ">
             </div>

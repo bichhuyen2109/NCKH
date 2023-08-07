@@ -6,7 +6,7 @@ function loadTopicCNTT() {
             for (let t of data) {
                 if (k.textContent === t.majors) {
                     h += `
-                        <div class="topic">
+                        <div class="topic  wow animate__slideInRight animate__slow">
                             <div>
                             <div class="image-topic">
                                 <img src="${t.img}" alt="${t.name}">
@@ -41,7 +41,7 @@ function loadTopicCNSH() {
             for (let t of data) {
                 if (k.textContent === t.majors) {
                     h += `
-                        <div class="topic">
+                        <div class="topic  wow animate__slideInRight animate__slow">
                             <div>
                             <div class="image-topic">
                                 <img src="${t.img}" alt="${t.name}">
@@ -76,7 +76,7 @@ function loadTopicQTKD() {
             for (let t of data) {
                 if (k.textContent === t.majors) {
                     h += `
-                        <div class="topic">
+                        <div class="topic  wow animate__slideInRight animate__slow">
                             <div>
                             <div class="image-topic">
                                 <img src="${t.img}" alt="${t.name}">
@@ -111,7 +111,7 @@ function loadTopicXHH() {
             for (let t of data) {
                 if (k.textContent === t.majors) {
                     h += `
-                        <div class="topic">
+                        <div class="topic wow animate__slideInRight animate__slow">
                             <div>
                             <div class="image-topic">
                                 <img src="${t.img}" alt="${t.name}">
@@ -138,9 +138,43 @@ function loadTopicXHH() {
     })
 }
 
+function headerOnload(){
+    let loca = window.location.href;
+  
+    let item = document.querySelector(".menu-item>li:first-child");
+   
+    let link = item.querySelector("a");
+    // Kiểm tra nếu đường dẫn của menu trùng với đường dẫn hiện tại
+    if (link.href == loca) {
+      // Thêm lớp 'active' vào phần tử menu tương ứng
+      item.classList.add("action");
+    }
+  }
+  
+function headerClick(){
+    let location = window.location.href;
+  
+    // Lặp qua các phần tử menu để kiểm tra đường dẫn
+    let menu = document.querySelectorAll(".menu-item li");
+    for(let itemMenu of menu){
+      itemMenu.onclick = function(){
+        let link = itemMenu.querySelector("a");
+  
+        // Kiểm tra nếu đường dẫn của menu trùng với đường dẫn hiện tại
+        if (link.href == location) {
+          // Thêm lớp 'active' vào phần tử menu tương ứng
+          itemMenu.classList.add("action");
+        }
+      }
+    }
+}
+
 window.onload = function () {
     loadTopicCNSH();
     loadTopicCNTT();
     loadTopicQTKD();
     loadTopicXHH();
+
+    headerClick();
+    headerOnload();
 }

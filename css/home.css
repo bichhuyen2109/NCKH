@@ -22,16 +22,10 @@
 .topic {
     height: 100%;
     box-shadow: 10px 5px 10px #454545;
-    width: 47%;
+    width: 45%;
     margin-bottom: 1%;
     border-radius: 15px;
 }
-
-/* .topic:hover {
-    margin: 9%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-} */
 
 .image-topic {
     width: 40%;
@@ -170,19 +164,18 @@ h3.text-info {
     border-radius: 20px;
 }
 
-.info-lecturer input {
+.info-lecturer a {
     background-color: #c688eb;
     color: white;
     font-size: 20px;
     padding: 8px 15px;
-    border: none;
     border-radius: 20px;
     text-align: center;
-    cursor: pointer;
+    text-decoration: none;
     margin-top: 7%;
 }
 
-.info-lecturer input:hover {
+.info-lecturer a:hover {
     background-color: #0178ffd2;
 }
 

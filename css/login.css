@@ -1,3 +1,7 @@
+body{
+    background-color: #ffc4a4;
+}
+
 .login{
     background: linear-gradient(#c688eb,#6c7de1);
     width: 40%;
@@ -15,17 +19,18 @@
 .login h1{
     color: aliceblue;
     text-shadow: 4px 3px 2px #fba2d0;
+    font-family: myRegular;
 }
 
 .sect select{
     font-size: 17px;
     min-width: 100px;
-    width: 25%;
+    
     border-radius: 10px;
 }
 
-.user input,
-.pass input{
+.form-user input,
+.form-pass input{
     font-size: 17px;
     width: 35%;
     border-radius: 10px;
@@ -55,8 +60,8 @@
         font-size: 13px;
     }
     
-    .user input,
-    .pass input{
+    .form-user input,
+    .form-pass input{
         font-size: 13px;
         width: 50%;
     }
@@ -78,8 +83,8 @@
         font-size: 13px;
     }
     
-    .user input,
-    .pass input{
+    .form-user input,
+    .form-pass input{
         font-size: 13px;
         width: 50%;
     }

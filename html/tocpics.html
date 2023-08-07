@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OU</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="/image/ou.png">
     <link rel="stylesheet" href="/css/footer.css">
@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="/css/gototop.css">
     <link rel="stylesheet" href="/css/tocpic.css">
 
-    <script src="/js/code.jquery.com_jquery-3.7.0.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
         wow = new WOW(
             {
                 boxClass: 'wow',      // default
-                animateClass: 'animated', // default
+                animateClass: 'animate__animated', // default
                 offset: 0,          // default
                 mobile: true,       // default
                 live: true        // default
@@ -35,8 +36,8 @@
 <body>
     <nav>
         <div class=" menu flex header">
-            <div class="image-header"> <img src="/image/logo.png" alt="OU"></div>
-            <div class="menu-items">
+            <div class="image-header wow animate__slideInLeft animate__slow"> <img src="/image/logo.png" alt="OU"></div>
+            <div class="menu-items wow animate__slideInRight animate__slow">
                 <ul class="menu-item flex text-decoration">
                     <li>
                         <a href="/html/home.html">Trang chủ</a>
@@ -53,27 +54,18 @@
                     <li class="contact">
                         <a href="#">Liên hệ</a>
                     </li>
+                    <li class="user" > 
+                        <a href="/html/login.html"><i class="fa-solid fa-user"></a></i>
+                    </li>
                 </ul>
-            </div>
-            <div class="user"><a href="#"><i class="fa-solid fa-user"></a></i>
-                <!-- <div class="flex menu-user">
-                    <div class="flex">
-                        <a href="#">Đăng ký</a>
-                    </div>
-                    <div>
-                        <span>/</span>
-                    </div>
-                    <div class="flex">
-                        <a href="#">Đăng nhập</a>
-                    </div></div> -->
             </div>
         </div>
     </nav>
 
     <header class="image">
         <div class="img flex">
-            <div class="text-image">
-                <h1>Khoa học rỗng tuếch và đầy sai lầm nếu không sinh ra từ Thực nghiệm, người mẹ của mọi Tri thức.</h1>
+            <div class="text-image wow animate__lightSpeedInLeft animate__slow">
+                <h1>" Khoa học rỗng tuếch và đầy sai lầm nếu không sinh ra từ Thực nghiệm, người mẹ của mọi Tri thức. "</h1>
                 <p>Trích danh ngôn của Leonardo da Vinci</p>
             </div>
             <div class="image-item">
@@ -90,7 +82,7 @@
     </div>
 
     <section class="titles">
-        <div class="title">
+        <div class="title wow animate__backInDown animate__slow">
             <h1>Danh sách Đề Tài</h1>
         </div>
     </section>
@@ -98,9 +90,9 @@
     <main class="info-main">
             <!-- CNTT -->
             <div class="container">
-                <h1 class="title-main"> <span id="title-cntt">Công Nghệ Thông Tin</span></h1>
+                <h1 class="title-main wow animate__rotateInDownLeft animate__slow"> <span id="title-cntt">Công Nghệ Thông Tin</span></h1>
                 <div class="topics flex" id="cntt">
-                    <div class="topic">
+                    <div class="topic wow animate__slideInRight animate__slow">
                         <div>
                             <div class="image-topic">
                                 <img src="/image/ten.jpg" alt="D.H>Thành">
@@ -121,9 +113,9 @@
             </div>
             <!-- CNSH -->
             <div class="container">
-                <h1 class="title-main"> <span id="title-cnsh">Công Nghệ Sinh Học</span></h1>
+                <h1 class="title-main wow animate__rotateInDownLeft animate__slow"> <span id="title-cnsh">Công Nghệ Sinh Học</span></h1>
                 <div class="topics flex" id="cnsh">
-                    <div class="topic">
+                    <div class="topic wow animate__slideInRight animate__slow">
                         <div>
                             <div class="image-topic">
                                 <img src="/image/ten.jpg" alt="D.H>Thành">
@@ -144,9 +136,9 @@
             </div>
             <!-- QTKD -->
             <div class="container">
-                <h1 class="title-main"> <span id="title-qtkd">Quản Trị Kinh Doanh</span></h1>
+                <h1 class="title-main wow animate__rotateInDownLeft animate__slow"> <span id="title-qtkd">Quản Trị Kinh Doanh</span></h1>
                 <div class="topics flex" id="qtkd">
-                    <div class="topic">
+                    <div class="topic wow animate__slideInRight animate__slow">
                         <div>
                             <div class="image-topic">
                                 <img src="/image/ten.jpg" alt="D.H>Thành">
@@ -167,9 +159,9 @@
             </div>
             <!-- XHH-CTXH-ĐNA -->
             <div class="container">
-                <h1 class="title-main"> <span id="title-xhh">XHH-CTXH-ĐNA</span></h1>
+                <h1 class="title-main wow animate__rotateInDownLeft animate__slow"> <span id="title-xhh">XHH-CTXH-ĐNA</span></h1>
                 <div class="topics flex" id="xhh">
-                    <div class="topic">
+                    <div class="topic wow animate__slideInRight animate__slow">
                         <div>
                             <div class="image-topic">
                                 <img src="/image/ten.jpg" alt="D.H>Thành">
